@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+import numpy as np
+points = np.array([4,7,2,10,13])
+plt.plot(points)
+plt.show()
+plt.plot(points,linestyle = 'dashed')
+plt.show()
+x = np.array(["X","Y","Z","W"])
+y = np.array([25,30,27,22])
+plt.bar(x,y)
+plt.show()
+labels = ['Category A', 'Category B', 'Category C', 'Category D']
+sizes = [25, 30, 20, 25]
+plt.pie(sizes)
+plt.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=-10)
+plt.title('Pie Chart Example')
+plt.show()
+# data = np.random.randn(1000)
+# data = np.array([25,30,27,22])
+data = np.random.normal(170, 10, 250)
+plt.hist(data)
+# plt.hist(data, bins=30, color='skyblue', edgecolor='black')
+plt.title('Histogram Example')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()

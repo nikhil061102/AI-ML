@@ -1,0 +1,23 @@
+import numpy as np
+a = np.array([1,2,3,3,4,5,8,5,10,20,1])
+
+x = np.where(a == 1)
+print(x)
+y = np.where(a == 4)
+print(y)
+ans = np.where(a%2 == 0)
+print(ans)
+ans2 = np.where(a == 44)
+print(ans2)
+
+print(a)
+a = np.sort(a)
+print(a)
+a2 = np.array([44,12,90,76,55])
+print(a2)
+a2 = np.sort(a2)
+print(a2)
+a3 = np.array(["mango","papaya","apple","orange"])
+print(a3)
+a3 = np.sort(a3)
+print(a3)
